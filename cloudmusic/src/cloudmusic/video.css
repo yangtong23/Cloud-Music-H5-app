@@ -1,0 +1,9 @@
+.video_box{
+    width: 100%;
+    padding: .2rem;
+}
+
+.video_box video{
+    width: 100%;
+    border-radius: .2rem;
+}

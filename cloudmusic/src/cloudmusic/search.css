@@ -1,0 +1,124 @@
+.search_in{
+     border: none;
+     background: transparent;
+     color: white;
+     border-bottom: 1px solid #d3d3d3;
+     width: 100%;
+     height: 30px;
+    
+}
+.search_div{
+    width: 90%;
+    position: relative;
+}
+.search_content{
+   width: 115%;
+   position: absolute;
+   background: white;
+   left:-15%;
+   top: 40px;
+   box-shadow:  1px 1px 1px 1px  #d3d3d3;
+   display: none;
+   /* padding: 10px; */
+}
+.search_content li{
+    padding: 10px 5%;
+    border-bottom: 1px solid #ebeaea;
+    color: #999191;
+    font-size: 14px;
+}
+.search_content li:first-child{
+    color: rgb(139, 179, 179);
+}
+.search_content li img{
+    width: 15px;
+    height: 15px;
+}
+
+.search_box{
+    background: rgb(207, 48, 48);
+    padding: .6rem .6rem .2rem;
+    /* width: 100%; */
+    display: flex;
+    box-sizing: border-box;
+    
+}
+.search_box img{
+    width: 26px;
+    height: 26px;
+    padding-right: 0.3rem;
+}
+
+.search_in::-webkit-input-placeholder{
+    color: #d39b9b;
+    font-size: 14px;
+}
+.search_his{
+    font-size: 14px;
+    color: #d3d3d3;
+}
+
+.search_hidden{
+    display: none;
+}
+
+
+.search_heshrt{
+    background: white;
+}
+.search_heshrt>li{
+    display: flex;
+   align-items: center;
+    padding: 0 .2rem 0;
+}
+.search_heshrt>li>p{
+    color: rgb(128, 118, 118);
+}
+.search_heshrt>li img{
+    height: .5rem;
+}
+.search_style{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* margin-left:.8rem;  */
+    border-bottom:  1px solid  #f0eded;
+    padding-top:.2rem; 
+}
+.search_style>div:first-child{
+ width: 80%;
+}
+.search_style p:last-of-type{
+    font-size: 12px;
+    color: rgb(128, 118, 118);
+    padding: .1rem 0 .3rem;
+}
+.search_style p:first-of-type{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #615c5c;
+    /* width: 80%; */
+}
+.icon_div{
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dadadad{
+    text-align: center;
+    margin: .5rem 0 !important;
+    font-size: 14px;
+    color: #999393;
+}
+
+#search_result{
+    overflow: hidden;
+}
+
+
+.search_his_name{
+    flex-grow: 1;
+}

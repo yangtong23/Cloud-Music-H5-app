@@ -1,0 +1,223 @@
+.plager_box{
+    padding: .6rem ;
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.player{
+    background:  center;  
+    position: absolute;  
+    background-size:600%; 
+    top: 0px;  
+    left: 0px;  
+    height: 150%;  
+    width: 130%;  
+
+    margin: -10%;  
+    background-size: cover;  
+    /* filter: url(blur.svg#blur);   */
+    -webkit-filter: blur(40px) brightness(.6);  
+    /* -moz-filter: blur(15px) brightness(1);   */
+    /* IE6~IE9 */  
+    /* filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);  */
+    z-index: -444;
+    overflow: hidden;
+}
+
+.playerTop{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    overflow: hidden;
+   
+}
+.playerTop>div{
+    width: 80%;
+    overflow: hidden;
+}
+.playerTop img{
+    width: 30px;
+    height: 30px;
+}
+.playerTop>div{
+    display: flex;
+    flex-grow: 1;
+    justify-items: center;
+    margin-right:.5rem; 
+}
+.playerTop>div img{
+    padding-right: .6rem;
+}
+.singer_11{
+    color: #d3d3d3;
+    font-size: 12px;
+    margin-top: .2rem;
+}
+.playerTop>div>div{
+    width: 100%;
+    border-bottom: 0.2px solid #e9e7e7;
+    padding-bottom: .2rem;
+}
+.control_rod{
+    width: 100%;
+    height: 4rem;
+    position: relative;
+    overflow: hidden;
+   /* margin-top: -.5rem; */
+    /* text-align: center; */
+}
+.control_rod>img{
+    margin-left: 40%;
+     position: absolute;
+     top: 0px;
+     width: 30%;
+     margin-top: -.7rem;
+     transform-origin: 20px 20px; 
+     transition: transform 0.8s; 
+     /* transform: rotateZ(-25deg);   */
+     z-index: 1;
+}
+
+/* 黑胶片动画 */
+@keyframes rotate-disk {  
+   
+    100% {  
+        transform: rotateZ(360deg)  
+    }  
+}  
+  
+/* 磁针动画 */
+.pause-needle {  
+    transform: rotateZ(-25deg);  
+}  
+  
+.resume-needle {  
+    transform: rotateZ(0deg);  
+}
+
+
+.pause-needle {  
+    animation: rotate-needle-pause 0.5s 1 normal linear;  
+    animation-fill-mode: forwards;  
+}  
+  
+.resume-needle {  
+    animation: rotate-needle-resume 0.5s 1 normal linear;  
+    animation-fill-mode: forwards;  
+}  
+
+.cizhen{
+    animation: rotate-disk 20s infinite normal linear;  
+    animation-play-state: paused; 
+}
+.film img{
+    width: 70%;
+
+}
+.film{
+    text-align: center;
+    margin-top: -1.7rem;
+    position: relative;
+   
+}
+.film img:last-child{
+    width: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: 14%;
+    left: 25%;
+}
+.player_middle{
+    display: flex;
+    justify-content: space-between;
+    margin-top:1rem; 
+    align-items: center;
+
+}
+.player_middle img{
+    width: 100%;
+}
+.player_middle div{
+    position: relative;
+}
+
+.content{
+position: absolute;
+color: white;
+top: 26%;
+right: 13%;
+font-size: 10px;
+}
+.player_icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.player_icon img{
+    width: 100%;
+}
+
+
+
+
+
+
+.jindutio{
+    width: 100%;
+ position: relative;
+ margin-bottom: .8rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ color: white;
+}
+.process-bar {  
+    position: absolute;  
+    left: 15%;  
+    width: 70%;  
+    
+    background-color: #615D5C;  
+}  
+  
+.process-bar .rdy {  
+    background-color: #B1ADAC;  
+    height: 2px;  
+  
+}  
+  
+.process-bar .cur {  
+    background-color: #FB0D0D;  
+   
+    height: 2px;  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+}  
+  
+#processBtn{
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;  
+  top: -6px;  
+  right: -13px;  
+ margin-left: -11px;  
+}
+
+
+
+
+
+.song_name{
+    width: 89%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

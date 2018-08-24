@@ -1,0 +1,137 @@
+.playerlist_page{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.list_cover{
+    background:  center;  
+    position: absolute;  
+    top: 0px;  
+    left: 0px;  
+    height: 80%;  
+    width: 130%;  
+    margin: -15%;  
+    background-size: cover;  
+    /* filter: url(blur.svg#blur);   */
+    -webkit-filter: blur(60px) brightness(.5);  
+    /* -moz-filter: blur(15px) brightness(1);   */
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */  
+    z-index: -1;
+    overflow: hidden;
+   
+}
+
+.list_top{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: .6rem .8rem .6rem;
+}
+.list_top img{
+    width: 26px;
+    height: 26px;
+}
+.list_top span{
+    margin-left: .4rem;
+}
+
+.list_cover_middle{
+    display: flex;
+    padding: 0rem  .8rem;
+}
+.list_cover_middle>img{
+    width: 40%;
+    height: 40%;
+    margin-right: 10%;
+}
+.list_cover_middle>div img{
+    width: 20%;
+    border-radius: 50%
+}
+.list_cover_middle>div>p:first-child{
+     color: white;
+     font-size: 18px;
+     padding-top: .3rem;
+}
+
+.list_cover_middle>div>p:last-child{
+    color: rgb(221, 209, 209);
+    font-size: 12px;
+    margin-top: .6rem;
+    vertical-align: middle;
+}
+
+.list_cover_middle>div>p span{
+    padding: 0 .2rem;
+}
+.list_cover_middle>div>p svg{
+    vertical-align: middle;
+}
+
+.list_cover_bottom{
+    display: flex;
+    color:rgb(197, 183, 183);
+    justify-content: space-between;
+    padding: .8rem;
+    text-align: center;
+
+}
+.list_cover_bottom img{
+    width: 50%;
+}
+
+.playall {
+    background: white;
+    border-radius: .4rem .4rem 0 0;
+    padding: .4rem .8rem;
+    color: black;
+    border-bottom:  1px solid  #e6dddd;
+}
+.playall img{
+    width: 5%;
+    padding-right: .4rem;
+}
+.xiaospan{
+    font-size: 14px;
+    color: rgb(128, 118, 118);
+}
+
+.song_heshrt{
+    background: white;
+}
+.song_heshrt>li{
+    display: flex;
+   
+    align-items: center;
+    padding: 0 .8rem;
+}
+.song_heshrt>li>p{
+    color: rgb(128, 118, 118);
+}
+.song_heshrt>li img{
+    height: .5rem;
+}
+
+.song_style{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-left:.8rem; 
+    border-bottom:  1px solid  #f0eded;
+    padding-top:.2rem; 
+}
+.song_style p:last-of-type{
+    font-size: 12px;
+    color: rgb(128, 118, 118);
+    padding: .2rem 0 .3rem;
+}
+
+
+.song_steet_name{
+    color: black;
+    font-size: 14px;
+    padding: .1rem;
+    line-height: .5rem;
+}

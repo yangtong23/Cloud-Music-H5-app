@@ -1,0 +1,14 @@
+1. 更改服务器package.json配置 port和db
+
+2. 点击start.bat启动服务器 或使用npm start命令启动
+
+3. 前端服务器发送请求，使用ykt-http-client模块，先npm i 此模块
+   var http = require('ykt-http-client');
+
+    //参数1 服务器地址路径，这里注意，不需要加http前缀  
+    //参数2 要传递给服务器的数据，没有参数写{}，具体传递哪些参数详情查看api
+
+    http.get || http.post
+    http.get('127.0.0.1:8080/users/find',param).then(function(data){
+        //data是返回的数据
+    })
